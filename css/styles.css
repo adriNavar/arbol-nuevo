@@ -11340,12 +11340,12 @@ p {
 }
 
 #mainNav {
-  background-color: transparent !important; /* Fondo transparente */
+  background-color: black !important; /* Fondo transparente */
   transition: background-color 0.5s ease-in-out; /* Efecto de transición suave */
 }
 
 #mainNav.scrolled {
-  background-color: #000000 !important; /* Cambia el fondo a color cuando haces scroll */
+  background-color: red !important; /* Cambia el fondo a color cuando haces scroll */
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11414,7 +11414,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/arbol.png");
+  /* background-image: url("../assets/img/arbol.png"); */
   background-repeat: no-repeat; 
   background-attachment: scroll;
   background-position: center;
@@ -11780,11 +11780,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
-
 .footer {
-  text-align: center;
-  font-size: 0.9rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center !important;
+    font-size: 0.9rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
@@ -11902,4 +11901,50 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 
-/* Redes Sociales */
+#redes-sociales-footer {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+}
+
+#redes-sociales-footer a {
+  margin: 0 15px;  /* Espaciado entre los botones */
+  font-size: 30px; /* Tamaño de fuente más grande para los iconos */
+  color: white;     /* Color del texto/icono */
+  text-decoration: none; /* Sin subrayado */
+}
+
+#redes-sociales-footer a:hover {
+  color: #ccc;     /* Cambia el color al pasar el ratón sobre los botones */
+}
+
+.text-red {
+  color: red;
+}
+
+.footer-image {
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-right: 10px; /* Espacio entre la imagen y el contenido adyacente */
+  float: left; /* Establece la imagen a la izquierda */
+}
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) rotate(0deg);
+    color: red;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(360deg);
+    color: white;
+  }
+}
+
+#historiaLink {
+  display: inline-block;
+  animation: slideIn 2s ease-out infinite;
+  font-size: 2em;
+  font-family: 'Chewy', cursive;  /* Agrega la fuente Chewy */
+}
